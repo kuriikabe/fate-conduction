@@ -1,0 +1,40 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/debug.rpy", line 70, in open_debug
+    renpy.jump_in_new_context("debug")
+AttributeError: module 'renpy.exports' has no attribute 'jump_in_new_context'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "C:\Users\msree\Downloads\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\msree\Downloads\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "C:\Users\msree\Downloads\renpy-8.3.7-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\msree\Downloads\renpy-8.3.7-sdk\renpy\display\core.py", line 2218, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\msree\Downloads\renpy-8.3.7-sdk\renpy\display\core.py", line 3289, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "C:\Users\msree\Downloads\renpy-8.3.7-sdk\renpy\display\layout.py", line 1297, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\msree\Downloads\renpy-8.3.7-sdk\renpy\display\behavior.py", line 554, in event
+    rv = run(action)
+  File "C:\Users\msree\Downloads\renpy-8.3.7-sdk\renpy\display\behavior.py", line 401, in run
+    return action(*args, **kwargs)
+  File "game/debug.rpy", line 70, in open_debug
+    renpy.jump_in_new_context("debug")
+AttributeError: module 'renpy.exports' has no attribute 'jump_in_new_context'
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.7.25031702
+Fate Conduction 1.0
+Fri Oct 10 13:59:15 2025
