@@ -49,10 +49,12 @@ label Homurahara1_test:
             $ ATLAS_ALIGNMENT += 5
             "I take a seat at the back near the person who looks similar to the report."
             "I will continue to monitor him from here."
-    
-    "Switching to Redacted..."
-    jump Redacted1_test
 
+    if ATLAS_ALIGNMENT >= 10:
+        jump Proof1_test
+    else:
+        jump Redacted1_test
+    
 
 label Redacted1_test:
 

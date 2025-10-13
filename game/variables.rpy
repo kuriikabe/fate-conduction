@@ -19,4 +19,6 @@ default MEMORY_ECHO = 0
 default PROOF_UNLOCK = False 
 default REDACTED_UNLOCK = False
 default SAE_REVEAL = False 
+default TRUEENDING = False
+default ATLASENDING = False
 
